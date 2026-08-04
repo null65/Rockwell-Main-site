@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Rockwell Hitec</title>
+  <meta name="description" content="Contact Rockwell Hitec / Inkjet Service for Epson printer and projector repair. Call 01707 269086 or email info@inkjetservice.co.uk — Luton based, nationwide cover." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header site-header--solid">
+  <a class="nav-logo" href="index.html" aria-label="Rockwell Hitec home">
+    <img src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="printers.html">Printers</a>
+    <a href="projectors.html">Projectors</a>
+    <a href="about.html">About</a>
+    <a class="nav-contact" href="contact.html" aria-current="page">Contact</a>
+    <a class="nav-phone" href="tel:+441707269086">01707 269086</a>
+  </nav>
+</header>
+
+<section class="page-banner" aria-label="Contact">
+  <div class="page-banner-media page-banner-media--contact" aria-hidden="true"></div>
+  <div class="page-banner-overlay" aria-hidden="true"></div>
+  <div class="page-banner-content">
+    <p class="partner-pill">Contact</p>
+    <h1>Need a printer or projector sorted?</h1>
+    <p>Call or email — if we’re under a machine, leave a number and an engineer will call back as soon as they’re free.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="contact-grid">
+    <div class="contact-details reveal">
+      <div class="contact-block">
+        <h3>Phone</h3>
+        <p><a href="tel:+441707269086">01707 269086</a></p>
+      </div>
+      <div class="contact-block">
+        <h3>Email</h3>
+        <p><a href="mailto:info@inkjetservice.co.uk">info@inkjetservice.co.uk</a></p>
+        <p style="margin-top:6px;"><a href="mailto:info@rockwellhitec.co.uk">info@rockwellhitec.co.uk</a></p>
+      </div>
+      <div class="contact-block">
+        <h3>Address</h3>
+        <p>Unit 9, Langley Terrace Business Park<br>Latimer Road<br>Luton, Bedfordshire<br>LU1 3XQ</p>
+      </div>
+      <p class="contact-note">Include the machine model, any error codes, and a brief description of the fault — it helps us respond with the right engineer and parts.</p>
+    </div>
+
+    <form id="contactForm" class="modern-form reveal" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" required autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" required autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="Printer repair">Printer repair / breakdown</option>
+          <option value="Projector">Projector service</option>
+          <option value="Maintenance">Preventative maintenance</option>
+          <option value="Install">Install / deinstall / training</option>
+          <option value="Warranty">Warranty enquiry</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Include model, error codes and what’s happening…"></textarea>
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-dark">Send message</button>
+      <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="printers.html">Printers</a>
+        <a href="projectors.html">Projectors</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="tel:+441707269086">01707 269086</a>
+      </nav>
+    </div>
+    <div class="footer-top">
+      <div class="footer-partners">
+        <span>Epson service partner</span>
+        <img class="footer-epson" src="assets/epson-logo.png" alt="Epson">
+      </div>
+    </div>
+    <div class="footer-meta">
+      <p>© 2026 Rockwell Hitec Limited · Inkjet Service<br>Unit 9, Langley Terrace Business Park, Luton LU1 3XQ</p>
+      <p>Website by <a href="https://driverjack.co.uk">Jack Brown</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
