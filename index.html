@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rockwell Hitec | Epson Printer &amp; Projector Service</title>
-  <meta name="description" content="Epson service partners for large format printer repair, maintenance and projector servicing. Nationwide UK cover from Rockwell Hitec / Inkjet Service." />
+  <title>Epson Printer Repair &amp; Servicing | Inkjet Service</title>
+  <meta name="description" content="Nationwide Epson large format printer maintenance and repair. Inkjet Service is part of Rockwell Hitec Ltd — Epson-trained engineers, next-day breakdown cover." />
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get('brand');
+      var h = (location.hostname || '').replace(/^www\./, '').toLowerCase();
+      var brand = 'inkjet';
+      if (q === 'hitec' || q === 'inkjet') brand = q;
+      else if (h === 'rockwellhitec.co.uk' || h === 'rockwellhitec.com') brand = 'hitec';
+      document.documentElement.setAttribute('data-brand', brand);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body data-brand-title="home">
 
 <header class="site-header">
-  <a class="nav-logo" href="index.html" aria-label="Rockwell Hitec home">
+  <a class="nav-logo" href="index.html" data-brand-home-label aria-label="Home">
     <img src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -26,7 +36,7 @@
 </header>
 
 <section class="hero" aria-label="Introduction">
-  <div class="hero-media" role="img" aria-label="Large format printer and high brightness projector">
+  <div class="hero-media" role="img" aria-label="Large format printer and projector">
     <div class="hero-media-split">
       <div class="hero-media-half hero-media-printer"></div>
       <div class="hero-media-half hero-media-projector"></div>
@@ -36,13 +46,28 @@
   </div>
   <div class="hero-content">
     <img class="hero-logo" src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
-    <p class="partner-pill">Epson service partners</p>
-    <div class="hero-copy">
-      <h1>Nationwide repair and maintenance for Epson printers and projectors.</h1>
-      <p>Engineer-led support from Rockwell Hitec — next-day breakdown cover, warranty work, and honest advice on whether to repair or replace.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="contact.html">Book a call-out</a>
-        <a class="btn btn-ghost" href="printers.html">Our services</a>
+
+    <div class="brand-inkjet-only">
+      <p class="partner-pill">Epson printer repair &amp; projector workshop service</p>
+      <div class="hero-copy">
+        <h1>Epson large format printer maintenance &amp; repair.</h1>
+        <p>Inkjet Service is part of Rockwell Hitec Ltd. Dedicated engineers nationwide offer a next-day breakdown service for printers. We also provide projector workshop repair. We do not sell equipment — only repair.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Contact us</a>
+          <a class="btn btn-ghost" href="printers.html">Printer service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-hitec-only">
+      <p class="partner-pill">Rockwell Hitec Ltd · established 1982</p>
+      <div class="hero-copy">
+        <h1>Epson printer service and projector workshop repair.</h1>
+        <p>Rockwell Hitec Ltd has manufactured products for the photographic, motion picture and imaging industries for over thirty years. Day-to-day service is delivered through Inkjet Service — nationwide printer support and projector workshop repair.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Contact us</a>
+          <a class="btn btn-ghost" href="printers.html">Printer service</a>
+        </div>
       </div>
     </div>
   </div>
@@ -52,11 +77,11 @@
   <div class="trust-inner">
     <div class="trust-item reveal">
       <strong>Epson trained</strong>
-      <span>Qualified for warranty work on behalf of Epson</span>
+      <span>Qualified to undertake warranty work on behalf of Epson</span>
     </div>
     <div class="trust-item reveal">
       <strong>Nationwide</strong>
-      <span>Dedicated engineers with next-day breakdown cover</span>
+      <span>Dedicated engineers with next-day printer breakdown service</span>
     </div>
     <div class="trust-item reveal">
       <strong>Since 2000</strong>
@@ -64,37 +89,37 @@
     </div>
     <div class="trust-item reveal">
       <strong>Repair only</strong>
-      <span>We don’t sell kit — just trusted, impartial advice</span>
+      <span>We do not sell equipment — trusted advice on repair or replace</span>
     </div>
   </div>
 </div>
 
 <section class="section">
-  <p class="section-label reveal">Services</p>
-  <h2 class="reveal">Printers and projectors, kept running.</h2>
-  <p class="section-lead reveal">We specialise in Epson large format printers and also service projectors — with preventative maintenance, installs, and operator training.</p>
+  <p class="section-label reveal">Service</p>
+  <h2 class="reveal">Printers and projectors.</h2>
+  <p class="section-lead reveal">Inkjet Service Limited was formed in 2000 and has become a well-known printer repair service company in the UK, predominantly working with Epson and Fujifilm. We offer quality repairs and service at affordable prices — most customers end up saving money when they use us.</p>
 
   <div class="service-split">
     <article class="service-block reveal">
       <h3>Epson printer service</h3>
-      <p>Large format maintenance and repair across the UK. If it prints larger than A2 and Epson make it, we can fix it — including current business products and legacy devices.</p>
+      <p>We have dedicated engineers located nationwide to offer a next-day breakdown service. We work with resellers and are trusted by manufacturers with high-profile products for both in and out of warranty repairs. We always attempt to fix issues over the phone first so you only need on-site support when it is really required.</p>
       <ul>
         <li>SureColor P, T, F and S series</li>
         <li>SureLab commercial printers</li>
         <li>In and out of warranty repairs</li>
-        <li>Preventative maintenance contracts</li>
+        <li>Preventative maintenance, install and training</li>
       </ul>
       <a class="btn btn-outline" href="printers.html">Printer service</a>
     </article>
 
     <article class="service-block reveal">
-      <h3>Projector service</h3>
-      <p>We also work on projectors — diagnosing faults, restoring image quality, and getting presentation and venue kit back online with the same engineer-led approach.</p>
+      <h3>Projector workshop service</h3>
+      <p>Projector repair is carried out at our workshop — we do not offer on-site call-outs for projectors. Send the unit in for diagnosis and repair; we quote accurately and only fit parts that are required, with clear advice on whether repair or replacement is the better option.</p>
       <ul>
-        <li>Fault diagnosis and workshop repair</li>
+        <li>Workshop fault diagnosis and repair</li>
         <li>Optical and lamp-related issues</li>
-        <li>Install and deinstall support</li>
-        <li>Honest guidance on repair vs replace</li>
+        <li>Business and education fleets</li>
+        <li>Advice on repair versus replace</li>
       </ul>
       <a class="btn btn-outline" href="projectors.html">Projector service</a>
     </article>
@@ -105,18 +130,23 @@
   <div>
     <p class="section-label" style="color: rgba(255,255,255,0.7);">Partnership</p>
     <h2>Official Epson service partners.</h2>
-    <p>Our engineers are Epson trained and trusted with high-profile products for both in and out of warranty work. When you call, you speak to someone who knows the machine — not a scripted call centre.</p>
+    <p>Our engineers are Epson trained and qualified to undertake warranty work on behalf of Epson. When you call, you speak to an engineer who knows the product rather than a call centre reading from a script.</p>
   </div>
   <img class="epson-mark" src="assets/epson-logo.png" alt="Epson">
 </div>
 
 <section class="section">
-  <p class="section-label reveal">About us</p>
-  <h2 class="reveal">Engineers first. Downtime last.</h2>
-  <p class="section-lead reveal">Inkjet Service is part of Rockwell Hitec Ltd. We work with resellers and manufacturers across Epson and Fujifilm fleets — and we aim for industry-leading first-fix rates.</p>
+  <p class="section-label reveal">About</p>
+  <h2 class="reveal">Inkjet Service — part of Rockwell Hitec Ltd.</h2>
+  <p class="section-lead reveal brand-inkjet-only">Inkjet Service is part of Rockwell Hitec Ltd, which was established in 1982. We work with a number of resellers, only fit parts that are required, and all repairs come with a warranty. If printheads are required we use the manufacturer’s fixed-price repair option.</p>
+  <p class="section-lead reveal brand-hitec-only">Rockwell Hitec Ltd was established in 1982 and has manufactured products in the photographic, motion picture and imaging industries for over thirty years. Nationwide printer and projector workshop service is provided through Inkjet Service.</p>
   <div class="cta-row" style="margin-top: 32px;">
-    <a class="btn btn-dark" href="about.html">About Rockwell Hitec</a>
-    <a class="btn btn-outline" href="contact.html">Get in touch</a>
+    <a class="btn btn-dark" href="about.html">About us</a>
+    <a class="btn btn-outline" href="contact.html">Contact us</a>
+  </div>
+
+  <div class="mixers-note brand-hitec-only reveal">
+    <p>Chemical mixers (HV3 / MM3) remain available for specialised lab requirements — builds are infrequent. <a href="mixers.html">Details for existing and specialist enquiries</a>.</p>
   </div>
 </section>
 
@@ -138,6 +168,11 @@
         <span>Epson service partner</span>
         <img class="footer-epson" src="assets/epson-logo.png" alt="Epson">
       </div>
+      <nav class="footer-areas" aria-label="Site areas">
+        <a href="https://inkjetservice.co.uk/">Inkjet Service</a>
+        <a href="https://rockwellhitec.co.uk/">Rockwell Hitec</a>
+        <a href="mixers.html">Chemical mixers</a>
+      </nav>
     </div>
     <div class="footer-meta">
       <p>© 2026 Rockwell Hitec Limited · Inkjet Service<br>Unit 9, Langley Terrace Business Park, Luton LU1 3XQ</p>

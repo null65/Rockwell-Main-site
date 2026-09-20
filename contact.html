@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Rockwell Hitec</title>
-  <meta name="description" content="Contact Rockwell Hitec / Inkjet Service for Epson printer and projector repair. Call 01707 269086 or email info@inkjetservice.co.uk — Luton based, nationwide cover." />
+  <title>Contact | Inkjet Service / Rockwell Hitec</title>
+  <meta name="description" content="Contact Inkjet Service / Rockwell Hitec for Epson printer and projector repair. Call 01707 269086 — Luton based, nationwide cover." />
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get('brand');
+      var h = (location.hostname || '').replace(/^www\./, '').toLowerCase();
+      var brand = 'inkjet';
+      if (q === 'hitec' || q === 'inkjet') brand = q;
+      else if (h === 'rockwellhitec.co.uk' || h === 'rockwellhitec.com') brand = 'hitec';
+      document.documentElement.setAttribute('data-brand', brand);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +23,7 @@
 <body>
 
 <header class="site-header site-header--solid">
-  <a class="nav-logo" href="index.html" aria-label="Rockwell Hitec home">
+  <a class="nav-logo" href="index.html" data-brand-home-label aria-label="Home">
     <img src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -30,12 +40,16 @@
   <div class="page-banner-overlay" aria-hidden="true"></div>
   <div class="page-banner-content">
     <p class="partner-pill">Contact</p>
-    <h1>Need a printer or projector sorted?</h1>
-    <p>Call or email — if we’re under a machine, leave a number and an engineer will call back as soon as they’re free.</p>
+    <h1>Contact Inkjet Service.</h1>
+    <p>Call 01707 269086 or email. If we are under a machine, leave a contact number and an engineer will call back as soon as they are available.</p>
   </div>
 </section>
 
 <section class="section section--tight">
+  <p class="email-notice reveal">
+    Please check your address book and use <strong>info@rockwellhitec.co.uk</strong> where possible — older .eu addresses will not forward.
+  </p>
+
   <div class="contact-grid">
     <div class="contact-details reveal">
       <div class="contact-block">
@@ -51,7 +65,7 @@
         <h3>Address</h3>
         <p>Unit 9, Langley Terrace Business Park<br>Latimer Road<br>Luton, Bedfordshire<br>LU1 3XQ</p>
       </div>
-      <p class="contact-note">Include the machine model, any error codes, and a brief description of the fault — it helps us respond with the right engineer and parts.</p>
+      <p class="contact-note">For printers: include the model, any error codes, and a brief description of the fault. For projectors: workshop repair only (no on-site call-outs) — include the model and symptoms.</p>
     </div>
 
     <form id="contactForm" class="modern-form reveal" novalidate>
@@ -77,10 +91,11 @@
         <label for="subject">Subject</label>
         <select id="subject" name="subject" required>
           <option value="Printer repair">Printer repair / breakdown</option>
-          <option value="Projector">Projector service</option>
+          <option value="Projector">Projector workshop repair</option>
           <option value="Maintenance">Preventative maintenance</option>
           <option value="Install">Install / deinstall / training</option>
           <option value="Warranty">Warranty enquiry</option>
+          <option value="Chemical mixer">Chemical mixer enquiry</option>
           <option value="Other">Other</option>
         </select>
       </div>
@@ -112,6 +127,11 @@
         <span>Epson service partner</span>
         <img class="footer-epson" src="assets/epson-logo.png" alt="Epson">
       </div>
+      <nav class="footer-areas" aria-label="Site areas">
+        <a href="https://inkjetservice.co.uk/">Inkjet Service</a>
+        <a href="https://rockwellhitec.co.uk/">Rockwell Hitec</a>
+        <a href="mixers.html">Chemical mixers</a>
+      </nav>
     </div>
     <div class="footer-meta">
       <p>© 2026 Rockwell Hitec Limited · Inkjet Service<br>Unit 9, Langley Terrace Business Park, Luton LU1 3XQ</p>

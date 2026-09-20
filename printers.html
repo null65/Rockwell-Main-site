@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Epson Printer Service | Rockwell Hitec</title>
-  <meta name="description" content="Nationwide Epson large format printer repair and maintenance. SureColor, SureLab and legacy Stylus Pro — in and out of warranty from Rockwell Hitec." />
+  <title>Epson Printer Service | Inkjet Service</title>
+  <meta name="description" content="Nationwide Epson large format printer repair and maintenance. SureColor, SureLab and legacy models — in and out of warranty from Inkjet Service / Rockwell Hitec." />
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get('brand');
+      var h = (location.hostname || '').replace(/^www\./, '').toLowerCase();
+      var brand = 'inkjet';
+      if (q === 'hitec' || q === 'inkjet') brand = q;
+      else if (h === 'rockwellhitec.co.uk' || h === 'rockwellhitec.com') brand = 'hitec';
+      document.documentElement.setAttribute('data-brand', brand);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +23,7 @@
 <body>
 
 <header class="site-header site-header--solid">
-  <a class="nav-logo" href="index.html" aria-label="Rockwell Hitec home">
+  <a class="nav-logo" href="index.html" data-brand-home-label aria-label="Home">
     <img src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -29,19 +39,19 @@
   <div class="page-banner-media page-banner-media--printers" role="img" aria-label="Epson large format printer"></div>
   <div class="page-banner-overlay" aria-hidden="true"></div>
   <div class="page-banner-content">
-    <p class="partner-pill">Epson printer service</p>
-    <h1>Large format printers, repaired properly.</h1>
-    <p>Maintenance, breakdowns and warranty work for Epson printers larger than A2 — nationwide from Rockwell Hitec.</p>
+    <p class="partner-pill">Epson large format printer service</p>
+    <h1>Epson large format printer maintenance &amp; repair.</h1>
+    <p>Nationwide cover for Epson printers — in and out of warranty. Inkjet Service is part of Rockwell Hitec Ltd.</p>
   </div>
 </section>
 
 <section class="section section--tight">
   <p class="section-label reveal">What we cover</p>
-  <h2 class="reveal">If Epson make it and it prints large, we can fix it.</h2>
+  <h2 class="reveal">Epson large format printers.</h2>
   <div class="service-detail">
     <div class="prose reveal">
-      <p>We specialise in Epson large format printers across the UK. Our engineers attend site with the parts needed to get you running quickly, quote accurately, and fit only what is required — including manufacturer fixed-price options when printheads need work.</p>
-      <p>We handle both in and out of warranty repairs, preventative maintenance contracts, installs, deinstalls, and colour workflow support. We’ll always try to resolve issues over the phone first, so you only need an on-site visit when it’s really required.</p>
+      <p>We specialise in Epson large format printers across the UK. Our engineers are Epson trained and attend site with the parts required to get you up and running quickly. All work is quoted accurately. Along with repairs we install and deinstall equipment and can offer operator training on software and hardware.</p>
+      <p>We handle both in and out of warranty repairs and preventative maintenance. We always attempt to fix issues over the phone first so you only need on-site support when it is really required. All repairs come with a warranty. If printheads are required we use the manufacturer’s fixed-price repair option.</p>
     </div>
     <ul class="service-detail-list reveal">
       <li>SureColor P, T, F and S series</li>
@@ -59,38 +69,38 @@
 <div class="partner-band reveal">
   <div>
     <p class="section-label" style="color: rgba(255,255,255,0.7);">Partnership</p>
-    <h2>Epson trained. Warranty ready.</h2>
-    <p>Our engineers are Epson trained and trusted with high-profile products for both in and out of warranty work. When you call, you speak to someone who knows the machine.</p>
+    <h2>Epson trained. Warranty work.</h2>
+    <p>Our engineers are Epson trained and qualified to undertake warranty work on behalf of Epson. When you call, you speak to an engineer who knows the product rather than a call centre reading from a script.</p>
   </div>
   <img class="epson-mark" src="assets/epson-logo.png" alt="Epson">
 </div>
 
 <section class="section">
   <p class="section-label reveal">Before we visit</p>
-  <h2 class="reveal">A few details help us fix it faster.</h2>
+  <h2 class="reveal">To get the best from your service visit.</h2>
   <div class="points">
     <div class="point reveal">
       <h4>Ink &amp; media</h4>
-      <p>Have at least 50% ink available and note any unusual cleans, marks or print results.</p>
+      <p>Please ensure you have sufficient ink (at least 50%) or replacement cartridges. We carry test media; if you have issues with a specific paper stock we will need enough to carry out tests.</p>
     </div>
     <div class="point reveal">
-      <h4>Error codes</h4>
-      <p>Note any service codes or error numbers — that detail helps us arrive prepared.</p>
+      <h4>Service codes</h4>
+      <p>Please let us know all service codes and error numbers, and any unusual cleans, scuff marks or print results — that detail helps both of us reach a fix quickly.</p>
     </div>
     <div class="point reveal">
-      <h4>Warranty</h4>
-      <p>All repairs come with a warranty. We’ll always advise honestly on repair versus replace.</p>
+      <h4>Repair only</h4>
+      <p>We do not sell equipment. We will always give you the most economic route and only fit parts that are required.</p>
     </div>
   </div>
 </section>
 
 <div class="cta-band reveal">
   <div>
-    <h2>Need a printer sorted?</h2>
-    <p>Call 01707 269086 or send a message — if we’re under a machine, an engineer will call back as soon as they’re free.</p>
+    <h2>Need a printer repaired?</h2>
+    <p>Call 01707 269086 or send a message. If we are under a machine, leave a contact number and an engineer will call back as soon as they are available.</p>
   </div>
   <div class="cta-row">
-    <a class="btn btn-primary" href="contact.html">Book a call-out</a>
+    <a class="btn btn-primary" href="contact.html">Contact us</a>
     <a class="btn btn-outline" href="tel:+441707269086">Call now</a>
   </div>
 </div>
@@ -113,6 +123,11 @@
         <span>Epson service partner</span>
         <img class="footer-epson" src="assets/epson-logo.png" alt="Epson">
       </div>
+      <nav class="footer-areas" aria-label="Site areas">
+        <a href="https://inkjetservice.co.uk/">Inkjet Service</a>
+        <a href="https://rockwellhitec.co.uk/">Rockwell Hitec</a>
+        <a href="mixers.html">Chemical mixers</a>
+      </nav>
     </div>
     <div class="footer-meta">
       <p>© 2026 Rockwell Hitec Limited · Inkjet Service<br>Unit 9, Langley Terrace Business Park, Luton LU1 3XQ</p>

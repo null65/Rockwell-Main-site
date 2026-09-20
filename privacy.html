@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy | Rockwell Hitec</title>
+  <title>Privacy Policy | Rockwell Hitec / Inkjet Service</title>
   <meta name="description" content="How Rockwell Hitec / Inkjet Service collects and uses personal data on this website." />
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get('brand');
+      var h = (location.hostname || '').replace(/^www\./, '').toLowerCase();
+      var brand = 'inkjet';
+      if (q === 'hitec' || q === 'inkjet') brand = q;
+      else if (h === 'rockwellhitec.co.uk' || h === 'rockwellhitec.com') brand = 'hitec';
+      document.documentElement.setAttribute('data-brand', brand);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +23,7 @@
 <body>
 
 <header class="site-header site-header--solid">
-  <a class="nav-logo" href="index.html" aria-label="Rockwell Hitec home">
+  <a class="nav-logo" href="index.html" data-brand-home-label aria-label="Home">
     <img src="assets/rockwell-mark.png" alt="Rockwell Hitec Inkjet Service">
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -37,10 +47,10 @@
 
 <section class="section section--tight">
   <div class="legal reveal">
-    <p class="legal-meta">Last updated: 4 August 2026 · This page is kept factual as our tools change. If something below no longer matches how the site works, it will be updated.</p>
+    <p class="legal-meta">Last updated: 19 September 2026 · This page is kept factual as our tools change. If something below no longer matches how the site works, it will be updated.</p>
 
     <h2>Who we are</h2>
-    <p>This website is operated by <strong>Rockwell Hitec Limited</strong> (trading as Inkjet Service).</p>
+    <p>This website is operated by <strong>Rockwell Hitec Limited</strong> (trading as Inkjet Service). The same site is served from inkjetservice.co.uk, rockwellhitec.co.uk and rockwellhitec.com.</p>
     <ul>
       <li>Address: Unit 9, Langley Terrace Business Park, Latimer Road, Luton, Bedfordshire LU1 3XQ</li>
       <li>Phone: <a href="tel:+441707269086">01707 269086</a></li>
@@ -52,7 +62,7 @@
     <p>As of the date above, this is a brochure-style website. It does <strong>not</strong> run advertising trackers or web analytics that identify visitors, and it does not set marketing cookies.</p>
 
     <h3>Information you send us</h3>
-    <p>If you use the contact form, we collect the details you provide: name, email address, phone number (optional), subject, and message. That information is sent to our form handler so we can reply about printer or projector service.</p>
+    <p>If you use the contact form, we collect the details you provide: name, email address, phone number (optional), subject, and message. That information is sent to our form handler so we can reply about printer, projector or related service.</p>
     <p>If you email or phone us, we process whatever you include so we can handle your enquiry.</p>
 
     <h3>Technical delivery</h3>
@@ -97,7 +107,7 @@
     <p>When we add analytics, change hosting, or alter how forms work, we will update this page and the “Last updated” date so it stays accurate.</p>
 
     <div class="legal-note">
-      <p><strong>Changelog (factual):</strong> 4 Aug 2026 — Initial policy reflecting static site pages, contact form endpoint, Google Fonts, cookie preference storage, and no analytics yet.</p>
+      <p><strong>Changelog (factual):</strong> 19 Sep 2026 — Policy updated for multi-domain hosting (inkjetservice.co.uk, rockwellhitec.co.uk, rockwellhitec.com). 4 Aug 2026 — Initial policy reflecting static site pages, contact form endpoint, Google Fonts, cookie preference storage, and no analytics yet.</p>
     </div>
   </div>
 </section>
@@ -120,6 +130,11 @@
         <span>Epson service partner</span>
         <img class="footer-epson" src="assets/epson-logo.png" alt="Epson">
       </div>
+      <nav class="footer-areas" aria-label="Site areas">
+        <a href="https://inkjetservice.co.uk/">Inkjet Service</a>
+        <a href="https://rockwellhitec.co.uk/">Rockwell Hitec</a>
+        <a href="mixers.html">Chemical mixers</a>
+      </nav>
     </div>
     <div class="footer-meta">
       <p>© 2026 Rockwell Hitec Limited · Inkjet Service<br>Unit 9, Langley Terrace Business Park, Luton LU1 3XQ</p>
